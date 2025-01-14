@@ -1,0 +1,38 @@
+body {
+    background-color: #87cfec;
+}
+.board {
+    height:560px;
+    width: 800px;
+    background-color: black;
+    border: 20px solid #808080;
+    margin: 25px 250px;
+}
+
+.row {
+    height: 70px;
+}
+
+.black {
+    height: 70px;
+    width: 100px;
+    background-color: #000;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.white {
+    height: 70px;
+    width: 100px;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+}
+
+i {
+    margin-top: 15px;
+}

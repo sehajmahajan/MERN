@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#road {
+    height: 30vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    top: 50vh;
+}
+
+#road :nth-child(1){
+    left: 15%;
+}
+#road :nth-child(2){
+    left: 30%;
+}
+#road :nth-child(3){
+    left: 45%
+}
+#road :nth-child(4){
+    left: 60%;
+}
+#road :nth-child(5){
+    left: 75%;
+}
+#road :nth-child(6){
+    left: 90%;
+}
+
+.road_lines {
+    height: 20px;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+#car{
+    height: 200px;
+    width: 400px;
+    animation: move 5s linear infinite;
+    position: absolute;
+}
+
+@keyframes move {
+    from{
+        left:0px;
+    }
+    to{
+        left: 900px;
+    }
+}

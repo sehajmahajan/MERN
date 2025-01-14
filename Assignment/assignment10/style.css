@@ -1,0 +1,54 @@
+.section1 {
+    height: 620px;
+    background: url(images/car-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.section2, .section3, .section4, .section5{
+    height: 400px;
+    background-color: #353935;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.section1 h1 {
+    font-size: 80px;
+    text-align: center;
+    padding-top: 90px;
+    margin: 0;
+}
+
+.section2 h2, .section3 h2, .section4 h2, .section5 h2{
+    font-size: 30px;
+}
+
+.section2 p, .section3 p, .section4 p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.bg1 {
+    height: 300px;
+    background: url(images/mustang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg2 {
+    height: 300px;
+    background: url(images/mclaren.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg3 {
+    height: 300px;
+    background: url(images/bugatti.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

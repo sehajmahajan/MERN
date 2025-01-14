@@ -1,0 +1,19 @@
+/* *{
+    background-color: aqua;
+} */
+
+li{
+    font-size: 40px;
+}
+
+ol li{
+    color:red;
+}
+
+ul li{
+    color:green;
+}
+
+ol ul li{
+    color:orange
+}

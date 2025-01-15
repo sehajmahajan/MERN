@@ -1,0 +1,73 @@
+#first {
+    font-size: medium;
+    font-family: 'Segoe UI';
+    color: blueviolet;
+    text-decoration: underline 5px dashed red;
+    background-color: cadetblue;
+}
+
+#second {
+    line-height: 2;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: justify;
+    background-color: yellowgreen;
+}
+
+#third {
+    /* height: 50px;
+    width: 100px; */
+    background-color: thistle;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    text-transform: uppercase;
+}
+
+#forth {
+    /* text-shadow: 0px 0px 8px red; */
+    text-shadow: 5px 10px 0px red;
+}
+
+.box {
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+.border1 {
+    border: 10px solid red;
+}
+.border2 {
+    border: 10px dashed red;
+}
+.border3 {
+    border: 10px dotted red;
+}
+.border4 {
+    border: 10px double red;
+}
+.border5 {
+    border: 10px red inset;
+}
+.border6 {
+    border: 10px red outset;
+}
+.border7 {
+    border: 10px red ridge;
+}
+.border8 {
+    border: 10px red groove;
+}
+
+.box1 {
+    height: 0px;
+    width: 0px;
+    background-color: aquamarine;
+}
+
+.border9 {
+    border-left: 20px transparent red;
+    border-right: 20px transparent red;
+    border-bottom: 20px solid red;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box-model */
+        *{
+           /* margin:0; */
+           padding:0; 
+           box-sizing: border-box;
+           /* padding and border changes actual size of box thus using border-box helps to adjust given border and padding in between the box */
+        }
+        p{
+            display: none;
+            /* visibility: hidden; */
+        }
+        h1{
+            background-color: aqua;
+            display: inline;
+            /* height and width not supported */
+            height:100px;
+            width: 200px;
+        }
+        h2{
+            background-color: yellow;
+            display: inline-block;
+            /* height and width is supported */
+            height: 100px;
+            width: 200px;
+        }
+        span{
+            background-color: yellow;
+            display: block;
+        }
+        /* div, span */
+        .parent{
+            height: 100px;
+            background-color: black;
+            display: flex;
+            flex-direction:row;
+            /* row, row-reverse, column, column-reverse */
+            justify-content: space-between;
+            /* left, right, center, space-around, space-evenly, space-between */
+            align-items:  center;
+        }
+        /* display:grid */
+        /* flex-grow, flex-shrink */
+        .parent div{
+            height: 50px;
+            width: 50px;
+        }
+        .child1{
+            background-color: red;
+            /* padding-top:20px; */
+            border:10px solid green;
+            /* padding and border changes actual size of div  */
+            box-sizing: border-box;
+        }
+        .child2{
+            background-color: green;
+        }
+        .child3{
+            background-color: yellow;
+        }
+        .child4{
+            background-color: pink;
+        }
+        .child5{
+            background-color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nostrum cumque placeat dignissimos consequatur eaque, magnam molestias voluptate incidunt aspernatur dolore architecto iure suscipit, quia alias ad ipsam sapiente sequi?</p>
+    <h1>Hello</h1>abc
+    <h2>Hello2</h2>
+    <span>I am span</span>
+    <div>I am div</div>
+    <div class="parent">
+        <div class="child1">
+            hello
+        </div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+    </div>
+</body>
+</html>

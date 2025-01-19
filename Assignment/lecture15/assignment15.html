@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assignment15.css">
+    <title>Assignment 15</title>
+</head>
+
+<body>
+    <!-- section-1 start -->
+    <section class="section-1">
+        <nav>
+            <!-- left part -->
+            <div class="logo">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>Get the App</span>
+            </div>
+            <!-- right part -->
+            <div class="links">
+                <ul>
+                    <li><a href="#" style="color: white;">Investor Relations</a></li>
+                    <li><a href="#">Add restaurant</a></li>
+                    <li id="drop-down"><i class="fa-solid fa-s" id="name-logo"></i>Sehaj<i
+                            class="fa-solid fa-angle-down" id="down-arrow"></i>
+                        <!-- drop-down-list -->
+                        <ul id="drop-down-list">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main">
+            <h1>zomato</h1>
+            <p>Discover the best food & drinks in Jalandhar</p>
+
+            <div class="input-section">
+                <i class="fa-solid fa-location-dot" style="color: #ff7e8b;"></i>
+                <input list="area" id="area-input" placeholder="Enter Area">
+                <datalist id="area">
+                    <option>Patel Nagar</option>
+                    <option>Deol Nagar</option>
+                    <option>Tagore Nagar</option>
+                    <option>Avtar Nagar</option>
+                </datalist>
+                <div class="separator"></div>
+                <i class="fa-solid fa-magnifying-glass" style="color: #b7b7b7;"></i>
+                <input type="text" id="dish-input" placeholder="Search for restaurant, cuisine or a dish">
+            </div>
+        </main>
+    </section>
+    <!-- section-1 end -->
+
+    <!-- section-2 start -->
+    <section class="section-2">
+        <div class="choices">
+            <div class="choice">
+                <img src="images/zomato2.avif" alt="">
+                <h2>Order Online</h2>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+            <div class="choice">
+                <img src="images/zomato3.avif" alt="">
+                <h2>Dining</h2>
+                <p>View the city's favourite dining venues</p>
+            </div>
+        </div>
+    </section>
+    <!-- section-2 end -->
+</body>
+
+</html>

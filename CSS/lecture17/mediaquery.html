@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: red;
+        }
+        @media screen and (min-width:400px){
+            p{
+                background-color: blue;
+            }
+
+
+        }
+        @media screen and (min-width:700px){
+            p{
+                background-color: orchid;
+            }
+
+        }
+        .container{
+            height: 600px;
+            background-color: black;
+            display: flex;
+            /* flex-wrap: wrap; */
+            width: 80vw;
+        }
+        .container div{
+            height:50px;
+            width: 400px;
+
+        }
+        .child1, .child5{
+            background-color: aqua;
+        }
+        .child2, .child6{
+            background-color: pink;
+        }
+        .child3, .child7{
+            background-color: lightblue;
+        }
+        .child4{
+            background-color: green;
+        }
+        @media screen and (max-width:500px){
+            .container{
+                width:100vw;
+                flex-wrap: wrap;
+            }
+        }
+        /* screens- breakpoints 
+        1400-xxl
+        1200-xl
+        992- large
+        768- medium
+        576-small
+        */
+    </style>
+</head>
+<body>
+    <!-- mobile, tablet, laptops,  -->
+    <!-- 
+    width-400px 
+    min-width -400px+
+    max-width -400px -
+    -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi corrupti quaerat eveniet velit at ipsum sint odit quas fugit sunt, provident ad natus soluta repellat mollitia beatae accusamus nesciunt ipsam odio temporibus! Illum exercitationem minus nemo minima assumenda facere nostrum facilis modi eos sequi obcaecati vitae sint provident, iure, consequatur libero dicta blanditiis id repellendus laboriosam? Architecto nam voluptatibus deleniti nesciunt eius repellat, quas totam. Quisquam est a sapiente dignissimos magni provident doloribus, autem perspiciatis possimus aperiam? Consequuntur, id. Rem, magnam corporis veritatis eligendi mollitia a obcaecati placeat amet consectetur commodi dolorum officiis reprehenderit exercitationem. Quo ducimus laboriosam explicabo dolorum.</p>
+    <div class="container">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+        <div class="child7"></div>
+    </div>
+</body>
+</html>

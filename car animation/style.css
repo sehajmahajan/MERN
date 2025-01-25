@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container #background-img {
+    height: 100%;
+    width: 100%;
+    animation: day-shift 5s linear infinite;
+}
+
+.container #sun-img {
+    height: 78px;
+    width: 100px;
+    position: absolute;
+    top: 160px;
+    left: -70px;
+    animation: sun-move 5s linear infinite;
+}
+
+.container .car {
+    height: 160px;
+    width: 300px;
+    position: absolute;
+    bottom: 53px;
+    animation: car-move 5s linear infinite;
+}
+
+.container .car #car-body {
+    height: 150px;
+    width: 300px;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0px;
+}
+
+.container .car .tyre {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: tyre-rotate 5s linear infinite;
+}
+
+.container .car #car-tyre-1 {
+    bottom: 3px;
+    left: 17px;
+}
+
+.container .car #car-tyre-2 {
+    bottom: 3px;
+    right: 21px;
+}
+
+.container .butterfly-img {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    animation: butterfly-move 0.2s linear infinite;
+}
+.container #butterfly-img1 {
+    bottom: 10px;
+    left: 150px;
+    animation: butterfly-move 0.2s linear infinite;
+}
+.container #butterfly-img2 {
+    bottom: 15px;
+    left: 450px;
+    animation: butterfly-move 0.2s linear infinite;
+}
+.container #butterfly-img3 {
+    bottom: 10px;
+    left: 700px;
+    animation: butterfly-move 0.2s linear infinite;
+}
+
+@keyframes day-shift {
+    0% {
+        filter: brightness(0.3);
+    }
+    10% {
+        filter: brightness(0.7);
+    }
+    30% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.1);
+    }
+    70% {
+        filter: brightness(1);
+    }
+    90% {
+        filter: brightness(0.7);
+    }
+    100% {
+        filter: brightness(0.3);
+    }
+}
+
+@keyframes sun-move {
+    0% {
+        top: 160px;
+        left: 0px;
+    }
+    20% {
+        top: 110px;
+        left: 200px;
+    }
+    35% {
+        top: 60px;
+        left: 400px;
+    }
+    50% {
+        top: 10px;
+        left: 633px;
+    }
+    55% {
+        top: 10px;
+        left: 670px;
+    }
+    60% {
+        top: 60px;
+        left: 800px;
+    }
+    80% {
+        top: 110px;
+        left: 1000px;
+    }
+    100% {
+        top: 160px;
+        left: 1200px;
+        display: none;
+    }
+}
+
+@keyframes car-move {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 1000px;
+    }
+}
+
+@keyframes tyre-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes butterfly-move {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+    }
+}

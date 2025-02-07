@@ -1,0 +1,41 @@
+<!-- Create a GST calculator which takes amount from prompt and prints gst, amount and total -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gst Calculator</title>
+</head>
+
+<body>
+    <div>
+        <span>GST:</span>
+        <span id="gst">0</span>
+    </div>
+    <div>
+        <span>Amount:</span>
+        <span id="amount">0</span>
+    </div>
+    <div>
+        <span>Total:</span>
+        <span id="total">0</span>
+    </div>
+
+    <button id="btn" onclick="calculate()">Calculate</button>
+
+    <script>
+        function calculate() {
+            let amount = parseInt(prompt("Enter amount"));
+            let gst = amount * 0.18;
+            let total = amount + gst;
+
+            document.getElementById("gst").innerHTML = gst;
+            document.getElementById("amount").innerHTML = amount;
+            document.getElementById("total").innerHTML = total;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+
+<body>
+    <h1 id="result"></h1>
+
+    <script>
+        let num1 = parseInt(prompt("Enter number 1"));
+        let num2 = parseInt(prompt("Enter number 2"));
+        let operator = parseInt(prompt("1 for +, 2 for -, 3 for *, 4 for /")) ;
+        let result;
+
+        switch (operator) {
+            case 1:
+                result = num1 + num2;
+                break;
+            case 2:
+                result = num1 - num2;
+                break;
+            case 3:
+                result = num1 * num2;
+                break;
+            case 4:
+                result = num1 / num2;
+                break;
+            default:
+                result = "Not a valid operation";
+        }
+
+        console.log(result);
+        document.getElementById("result").innerHTML = result;
+
+    </script>
+</body>
+
+</html>

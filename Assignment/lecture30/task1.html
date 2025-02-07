@@ -1,0 +1,64 @@
+<!-- Custom div -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            gap:5px
+        }
+
+        input{
+            width: 200px;
+        }
+
+        button {
+            width: 200px;
+            background-color: green;
+            color: white;
+            border: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h2>Create a Custom Div</h2>
+    <div id="container">
+        <label for="color">Enter Color</label>
+        <input type="text" id="color">
+
+        <label for="bg-color">Enter Background Color</label>
+        <input type="text" id="bg-color">
+
+        <label for="height">Enter Height</label>
+        <input type="text" id="height">
+
+        <label for="width">Enter width</label>
+        <input type="text" id="width">
+
+        <label for="text">Enter Text</label>
+        <input type="text" id="text">
+
+        <button onclick="(create())">Create</button>
+    </div>
+
+    <div id="show"></div>
+
+    <script>
+        
+        function create(){
+            let show = document.getElementById("show");
+
+            show.style.color = document.getElementById("color").value;
+            show.style.backgroundColor = document.getElementById("bg-color").value;
+            show.style.height = document.getElementById("height").value;
+            show.style.width = document.getElementById("width").value;
+            show.innerHTML = document.getElementById("text").value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!-- Multi Button Task -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+        }
+
+        .container div {
+            height: 33.33%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        div:nth-child(1) {
+            background-color: darkcyan;
+        }
+
+        div:nth-child(1) input {
+            height: 50px;
+            width: 200px;
+        }
+
+        div:nth-child(2) {
+            background-color: honeydew
+        }
+
+        div:nth-child(2) button {
+            background-color: thistle;
+            border: 2px solid pink;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        div:nth-child(3) {
+            background-color: khaki;
+        }
+
+        div:nth-child(3) div {
+            height: 50px;
+            width: 200px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <input type="text" id="input-1">
+            <input type="text" id="input-2">
+        </div>
+
+        <div>
+            <button id="btn-1" onclick="firstBtn()">Button 1</button>
+            <button id="btn-2" onclick="secondBtn()">Button 2</button>
+            <button id="btn-3" onclick="thirdBtn()">Button 3</button>
+            <button id="btn-4" onclick="fourthBtn()">Button 4</button>
+            <button id="btn-5" onclick="fifthBtn()">Button 5</button>
+        </div>
+
+        <div>
+            <div id="box-1">Hello</div>
+            <div id="box-2">Bye</div>
+        </div>
+    </div>
+
+    <script>
+        function firstBtn() {
+            document.getElementById("input-2").value = document.getElementById("input-1").value;
+        }
+        function secondBtn() {
+            alert(document.getElementById("input-1").value);
+            alert(document.getElementById("box-1").innerHTML);
+            alert(document.getElementById("box-2").innerHTML);
+        }
+        function thirdBtn() {
+            document.getElementById("box-2").innerHTML = document.getElementById("input-1").value
+        }
+        function fourthBtn() {
+            document.getElementById("box-1").innerHTML = document.getElementById("box-1").innerHTML + document.getElementById("input-1").value + document.getElementById("input-2").value
+        }
+        function fifthBtn() {
+            document.getElementById("box-2").style.background = "url(images/img.jpg)";
+            document.getElementById("box-2").style.backgroundSize = "100% 100%";
+            document.getElementById("box-2").style.color = "white";
+            document.getElementById("input-1").type = "radio";
+            document.getElementById("input-2").type = "checkbox";
+        }
+    </script>
+</body>
+
+</html>

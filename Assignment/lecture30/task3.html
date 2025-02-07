@@ -1,0 +1,52 @@
+<!-- Multi-Image change -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+        height: 200px;
+        width: 300px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    #changing-image {
+        margin: 0 auto;
+    }
+
+    div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    div:nth-child(2){
+        display: flex;
+        gap: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div><img src="images/img.jpg" alt="" id="changing-image"></div>
+    <div>
+        <img src="images/img-1.jpg" alt="" id="img-1" onmouseover="changeImage(src)" onmouseout="unChangeImage()">
+        <img src="images/img-2.jpg" alt="" id="img-2" onmouseover="changeImage(src)" onmouseout="unChangeImage()">
+        <img src="images/img-3.jpg" alt="" id="img-3" onmouseover="changeImage(src)" onmouseout="unChangeImage()">
+        <img src="images/img-4.jpg" alt="" id="img-4" onmouseover="changeImage(src)" onmouseout="unChangeImage()">
+    </div>
+
+    <script>
+        function changeImage(source){
+            document.getElementById("changing-image").src = source;
+        }
+
+        function unChangeImage(){
+            document.getElementById("changing-image").src = "images/img.jpg"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- Create Inventory management with add and show button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inventory</h1>
+    <label for="product">Product</label>
+    <input type="text" id="product">
+    <button id="addBtn" onclick="addProducts()">Add</button>
+    <br>
+    <button id="showBtn" onclick="showProducts()">Show</button>
+    <br>
+    <div id="showProducts"></div>
+
+    <script>
+        let products = [];
+        function addProducts(){
+            products.push(document.getElementById("product").value);
+            document.getElementById("product").value = "";
+
+        }
+
+        function showProducts() {
+            for (let x in products){
+                document.getElementById("showProducts").innerHTML = document.getElementById("showProducts").innerHTML + products[x] + "<br>";
+            }
+        }
+
+    </script>
+</body>
+</html>

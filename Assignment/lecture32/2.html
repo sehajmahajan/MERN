@@ -1,0 +1,48 @@
+<!-- Create a form with required fields email and password, also match email with yourname@gmail.com and password 2025 user must redirect if all condition are valid -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #error{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login</h2>
+    <form action="submit.html" onsubmit="return checkform()">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <div id="error"></div>
+    </form>
+
+    <script>
+        function checkform() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            if (email == "sehajmahajan@gmail.com" && password == 2025) {
+                return true;
+            }
+            else {
+                document.getElementById("error").innerHTML = "Enter valid credentials"
+                return false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

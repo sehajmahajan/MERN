@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/ccc.png" onmouseover="changeImg('images/shinchan.jpg')" id="img1" onmouseout="changeImg('images/ccc.png')" >
+    <script>
+        // function changeImg(){
+        //     document.getElementById("img1").src="shinchan.jpg"
+        // }
+        // function changeImg2(){
+        //     document.getElementById("img1").src="ccc.png"
+        // }
+        function changeImg(x){
+            // console.log(x);
+            document.getElementById("img1").src=x
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- Create a page where user enters any number and in return he gets same number of div as the color entered, the div's color will be red if the number is even and yellow if number is odd -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #output {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <label for="input">Enter Number</label>
+    <input type="number" id="input">
+    <button onclick="generateDiv()">Click</button>
+    <div id="output"></div>
+
+    <script>
+        function generateDiv(){
+            let num = parseInt(document.getElementById("input").value);
+
+            if(num%2==0){
+                document.getElementById("output").style.backgroundColor = "red";
+            }
+            else {
+                document.getElementById("output").style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>

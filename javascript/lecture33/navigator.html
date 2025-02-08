@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="reload()">Reload123</button>
+    <button onclick="assign()">Assign</button>
+    <script>
+        function reload(){
+            window.location.reload()
+        }
+        function assign(){
+            let email="admin@gmail.com"
+            if(email=="admin@gmail.com"){
+                window.location.assign("../../Assignment/lecture32/submit.html")
+            }else{
+                window.location.replace("../../Assignment/lecture32/1.html");
+            }
+        }
+    </script>
+</body>
+</html>
